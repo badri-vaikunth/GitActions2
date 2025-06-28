@@ -1,14 +1,8 @@
-name: TestJOb
+name: HelloWorld
 on: push
 jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
-    - name: Print HelloWorld1
-      run: echo "HelloWorld1"
-  job2:
-    needs: job1
-    runs-on: ubuntu-latest
-    steps:
-    - name: Print HelloWorld2
-      run: echo "HelloWorld2"
+    - name: Verify Java Code Availability
+      run: cat HelloWorld.java
