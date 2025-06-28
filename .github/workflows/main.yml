@@ -6,5 +6,7 @@ jobs:
     steps:
     - name: Pulling the Code
       uses: actions/checkout@v4
+    - name: GO Insie the Repo Code
+      run: cd GitActions2
     - name: Verify Java Code Availability
       run: cat HelloWorld.java
