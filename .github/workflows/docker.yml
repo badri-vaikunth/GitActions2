@@ -8,8 +8,10 @@ jobs:
       run: docker version
     - name: Docker Login
       env:
-        USERNAME: badri.vaikunth@gmail.com
-        PASSWORD: Srihari@2025
-      run: docker login -u $USERNAME -p $PASSWORD
+        DOCKER_USERNAME: badri.vaikunth@gmail.com
+        DOCKER_PASSWORD: Srihari@2025
+      run: docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
     - name: Printing UN
-      run: echo ${{env.USERNAME}}
+      run: echo $DOCKER_USERNAME
+    - name: Printing PWD
+      run: echo $DOCKER_PASSWORD
