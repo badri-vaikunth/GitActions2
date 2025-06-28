@@ -13,4 +13,6 @@ jobs:
     - name: which chromedriver
       run: which chromedriver
     - name: Execute Cypress Shellscript
-      run: ./cypress.sh
+      run: |
+        chmod +x cypress.sh 
+        ./cypress.sh
