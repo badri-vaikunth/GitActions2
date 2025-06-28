@@ -2,19 +2,15 @@ name: HelloWorld
 on: push
 jobs:
   docker:
+    env:
+      DOCKER_USERNAME: badri.vaikunth@gmail.com
+      DOCKER_PASSWORD: Srihari@2025
     runs-on: ubuntu-latest
     steps:
     - name: Verifying the Docker
       run: docker version
     - name: Docker Login
-      env:
-        DOCKER_USERNAME: badri.vaikunth@gmail.com
-        DOCKER_PASSWORD: Srihari@2025
       run: docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
-    - name: Username Print Check
-      env:
-        USERNAME: badri.vaikunth@gmail.com
-      run: echo $USERNAME
     - name: Printing UN
       run: echo $DOCKER_USERNAME
     - name: Printing PWD
