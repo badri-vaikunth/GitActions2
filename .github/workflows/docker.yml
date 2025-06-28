@@ -12,4 +12,4 @@ jobs:
         PASSWORD: Srihari@2025
       run: docker login -u $USERNAME -p $PASSWORD
     - name: Printing UN
-      run: echo $USERNAME
+      run: echo ${{env.USERNAME}}
