@@ -12,3 +12,5 @@ jobs:
       run: cat helloworld.java
     - name: which chromedriver
       run: which chromedriver
+    - name: Checking Cypress Version
+      run: npx cypress --version
