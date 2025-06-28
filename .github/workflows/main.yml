@@ -4,5 +4,7 @@ jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
+    - name: Pulling the Code
+      uses: actions/checkout@v4
     - name: Verify Java Code Availability
       run: cat HelloWorld.java
