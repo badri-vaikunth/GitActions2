@@ -7,7 +7,7 @@ jobs:
     - name: Pulling the Code
       uses: actions/checkout@v4
     - name: Present Working Directory
-      run: echo pwd    
+      run: pwd    
     - name: GO Insie the Repo Code
       run: cd GitActions2
     - name: Verify Java Code Availability
