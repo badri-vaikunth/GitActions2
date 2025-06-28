@@ -4,5 +4,10 @@ jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
-    - name: Print HelloWorld
-      run: echo "HelloWorld"
+    - name: Print HelloWorld1
+      run: echo "HelloWorld1"
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Print HelloWorld2
+      run: echo "HelloWorld2"
