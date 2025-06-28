@@ -16,6 +16,7 @@ jobs:
         name: javacode
         path: helloworld.java
   job2:
+    needs: job1
     runs-on: ubuntu-latest
     steps:
     - name: Download the helloworld java file
