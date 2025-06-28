@@ -10,9 +10,8 @@ jobs:
       run: echo pwd    
     - name: Verify Java Code Availability
       run: cat helloworld.java
-    - name: which chromedriver
-      run: which chromedriver
-    - name: Execute Cypress Shellscript
-      run: |
-        chmod +x cypress.sh 
-        ./cypress.sh
+    - name: Upload the helloworld java file
+      uses: actions/upload-artifact@v4
+      with:
+        name: javacode
+        path: helloworld.java
