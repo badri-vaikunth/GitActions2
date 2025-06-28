@@ -11,6 +11,10 @@ jobs:
         DOCKER_USERNAME: badri.vaikunth@gmail.com
         DOCKER_PASSWORD: Srihari@2025
       run: docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
+    - name: Username Print Check
+      env:
+        USERNAME: badri.vaikunth@gmail.com
+      run: echo $USERNAME
     - name: Printing UN
       run: echo $DOCKER_USERNAME
     - name: Printing PWD
