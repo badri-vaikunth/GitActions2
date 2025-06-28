@@ -9,6 +9,6 @@ jobs:
     - name: Present Working Directory
       run: echo pwd    
     - name: Verify Java Code Availability
-      run: cat HelloWorld.java
+      run: cat helloworld.java
     - name: which chromedriver
       run: which chromedriver
