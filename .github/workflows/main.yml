@@ -7,8 +7,10 @@ jobs:
     - name: Pulling the Code
       uses: actions/checkout@v4
     - name: Present Working Directory
-      run: pwd
-    - name: Listing all the files
-      run: ls -lrt
+      run: echo pwd    
+    - name: GO Insie the Repo Code
+      run: cd GitActions2
     - name: Verify Java Code Availability
-      run: cat helloworld.java
+      run: cat HelloWorld.java
+    - name: which chromedriver
+      run: which chromedriver
