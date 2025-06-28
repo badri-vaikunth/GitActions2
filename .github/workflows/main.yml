@@ -23,6 +23,9 @@ jobs:
       uses: actions/download-artifact@v4
       with:
         name: javacode
-        path: helloworld.java
+    - name: check the directory
+      run: pwd
+    - name: List the files
+      run: ls -lrt
     - name: Read the HelloWorld
       run: cat helloworld.java
