@@ -8,8 +8,6 @@ jobs:
       uses: actions/checkout@v4
     - name: Present Working Directory
       run: echo pwd    
-    - name: GO Insie the Repo Code
-      run: cd GitActions2
     - name: Verify Java Code Availability
       run: cat HelloWorld.java
     - name: which chromedriver
