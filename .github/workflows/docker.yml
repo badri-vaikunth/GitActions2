@@ -7,4 +7,7 @@ jobs:
     - name: Verifying the Docker
       run: docker version
     - name: Docker Login
-      run: docker login -u badri.vaikunth@gmail.com -p Srihari@2025
+      env:
+        USERNAME: badri.vaikunth@gmail.com
+        PASSWORD: Srihari@2025
+      run: docker login -u $USERNAME -p $PASSWORD
