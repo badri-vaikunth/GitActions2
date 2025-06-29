@@ -1,0 +1,10 @@
+name: RepoVariableExecution
+on: push
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Print Secret
+      run: echo ${{ secrets.USERNAME_SECRET }}
+    - name: Print RepoVariables
+      run: echo ${{ vars.USERNAME_VARIABLE }}
